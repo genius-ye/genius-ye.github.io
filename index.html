@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<script type="text/javascript" src="./js/angular.min.js"></script>
+	<script type="text/javascript" src="./js/test.js"></script>
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">	</script>
+</head>
+<body ng-app="App" ng-controller="test">
+	<li ng-repeat="x in datas">{{x}}</li>
+	<input ng-model="url"></input>
+	<button onclick="demo()">点击</button>
+	<div>{{result}}</div>
+</body>
+</html>
