@@ -1,0 +1,105 @@
+body {
+	background-image: url(../imgs/bg.jpg);
+}
+
+div {
+	display: block;
+}
+
+p {
+	text-align: center;
+}
+
+#header {
+	height: 60px;
+	width: auto;
+}
+
+#content {
+	height: 400px;
+	width: auto;
+}
+
+#footer {
+	border: 1px solid gray;
+	border-radius: 4px;
+	width: 100%;
+	height: 20%;
+}
+
+#search {
+	background: #fff;
+    border-left: 1px solid #e5e5e5;
+    display: block;
+    float: right;
+    height: 28px;
+    padding: 18px 0;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: width 0.4s ease, left 0.4s ease;
+    transition: width 0.4s ease, left 0.4s ease;
+    width: 64px;
+    z-index: 52;
+}
+
+#search:hover {
+	width: 228px;
+}
+
+#search-btn {
+	left: 20px;
+    position: absolute;
+    top: 20px;
+    opacity: .54;
+	float: left;
+	background-position: 0px -274px;
+	height: 24px;
+	width: 24px;
+	background-image: url(../imgs/sprite.png);
+	display: inline-block;
+	vertical-align: middle;
+	opacity: .54;
+}
+
+#search_autocomplete {
+	float: right;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #2f2f2f;
+    font-size: 14px;
+    height: 24px;
+    outline: none;
+    padding: 4px 20px 4px 0;
+    width: 100%;
+    z-index: 1500;
+}
+
+#header-search-form {
+	opacity: 0;
+    left: 54px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s;
+}
+
+#header-search-form:hover
+{
+	opacity: 1;
+}
+
+.header-search-close {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    text-indent: -1000em;
+    background: url(../imgs/close.png) no-repeat 0 0;
+    z-index: 9999;
+}
