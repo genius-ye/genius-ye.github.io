@@ -131,6 +131,7 @@ p{
 }
 
 #content_article {
+	float: left;
 	width: 320px;
 	padding: 5px;
 	border-radius: 5px;
@@ -145,6 +146,10 @@ p{
 	opacity: .6;
 	border-radius: 5px;
 	z-index: -1;
+}
+
+#content_music{
+	float: right;
 }
 
 #footer_content
