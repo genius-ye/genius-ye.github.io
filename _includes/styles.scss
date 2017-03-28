@@ -497,9 +497,16 @@ body {
 
 pre,
 code {
-  font-size: 15px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
+  // font-size: 15px;
+  // border: 1px solid #e8e8e8;
+  // border-radius: 3px;
+    padding: 1px 3px;
+    margin: 0 3px;
+    background: #ddd;
+    border: 1px solid #ccc;
+    font-family: Menlo,Monaco,Andale Mono,lucida console,Courier New,monospace;
+    word-wrap: break-word;
+    font-size: 14px;
 }
 
 code {
