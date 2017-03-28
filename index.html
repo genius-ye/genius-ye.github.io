@@ -1,72 +1,50 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-<head>
-	<meta charset="UTF-8" />
-	<title>genius-ye</title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css" />
-</head>
+<main class="content" role="main">
 
-<body>
-	<div id="header">
-		<div id="search">
-			<div id="search_shadow"></div>
-			<div id="search_content">
-				<div id="search-btn"></div>
-				<form id="header-search-form">
-					<input id="search_autocomplete" type="text" value="" autocomplete="off" name="q" placeholder="Search">
-					<a class="header-search-close hide" id="search-close">close</a>
-				</form>
-			</div>
-		</div>
-	</div>
+  <header class="blog-header">
+      <h1 class="blog-title">{{ site.title }}</h1>
+      <h2 class="blog-description">{{ site.description }}</h2>
+  </header>
 
-	<div id="content">
-		<h2>Hi , Welcome To Genius-ye!</h2>
-		<div id="content_article">
-			<div id="content_article_shadow">
-			</div>
-			<div id="content_article_content">
-				<h4 style="margin-left: 100px;">Article</h4>
-				<ul>
-					<li><a href="https://github.com/genius-ye/article/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%A7%E4%BB%B6%E4%B8%AD%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7.md">自定义控件中使用自定义属性</a></li>
-					<li><a href="https://github.com/genius-ye/article/blob/master/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B8%A6%E6%B8%85%E9%99%A4%E6%8C%89%E9%92%AE%E7%9A%84EditText.md">自定义带清除按钮的EditText</a></li>
-					<li><a href="https://github.com/genius-ye/article/blob/master/%E5%9C%86%E5%BD%A2%E6%8C%89%E9%92%AE%E5%8A%A0%E9%98%B4%E5%BD%B1%E6%95%88%E6%9E%9C%E7%9A%84%E5%AE%9E%E7%8E%B0.md">圆形按钮加阴影效果的实现</a></li>
-					<li><a href="https://github.com/genius-ye/article/blob/master/Git/git%E6%94%AF%E6%8C%81%E4%B8%AD%E6%96%87%E7%9A%84%E9%85%8D%E7%BD%AE.md">git支持中文的配置</a></li>
-					<li><a href="https://github.com/genius-ye/article/blob/master/Android/utils/Logger.md">logger(日志工具类)</a> </li>
-					<li><a href="https://github.com/genius-ye/article/blob/master/Android%E7%8A%B6%E6%80%81%E6%A0%8F%E4%B8%80%E4%BD%93%E5%8C%96%EF%BC%88%E6%B2%89%E6%B5%B8%E5%BC%8F%E7%8A%B6%E6%80%81%E6%A0%8F%EF%BC%89.md">Android沉浸式状态栏（状态栏一体化）</a></li>
-					<li><a href="https://github.com/genius-ye/article/blob/master/%E4%B8%8D%E4%BD%BF%E7%94%A8SDK%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%EF%BC%88%E6%94%AF%E6%8C%81%E5%A4%9A%E5%9B%BE%E5%88%86%E4%BA%AB%EF%BC%89.md">不用sdk实现微信分享（支持多图分享）</a></li>
-					<li><a href="https://github.com/genius-ye/article/blob/master/Android%E5%8F%8C%E5%87%BB%E9%80%80%E5%87%BA%E5%BA%94%E7%94%A8.md">Android双击退出应用</a></li>
-					<li><a href="https://github.com/genius-ye/article/blob/master/Android%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%AE%9E%E7%8E%B0.md">Android自动更新实现</a></li>
-				</ul>
-			</div>
-		</div>
-		<div id="content_music">
-			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=17572555&auto=1&height=66"></iframe>
-		</div>
-	</div>
+  <div class="cf frame">
+    {% for post in paginator.posts %}
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <div class="article-item">
+          <header class="post-header">
+            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+          </header>
+          <section class="post-excerpt" itemprop="description">
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          </section>
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
 
-	<div id="footer">
-		<div id="footer_shadow"></div>
-		<div id="footer_content">
-			<p>
-				Author : gnius-ye
-			</p>
-			<p>
-				QQ : 505661829
-			</p>
-			<p>
-				Mail :505661829@qq.com
-			</p>
-		</div>
-	</div>
+  <nav class="pagination" role="navigation">
+    {% if paginator.next_page %}
+      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
+    {% else %}
+      <a class="newer-posts disabled">&larr; Older posts</a>
+    {% endif %}
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+        <a class="older-posts" href="{{ site.baseurl }}/">Newer posts &rarr;</a>
+      {% else %}
+        <a class="older-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+      {% endif %}
+    {% else %}
+      <a class="older-posts disabled">Newer posts &rarr;</a>
+    {% endif %}
+  </nav>
 
-	<div>
-		<p id="footer_record">
-		</p>
-	</div>
+</main>
 
-<script src="js/record.js"></script>
-</body>
-
-</html>
+{% include footer.html %}
