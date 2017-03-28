@@ -3,8 +3,6 @@ layout: post
 title: toolbar中设置menu收起图标颜色以及popupwindow弹出位置
 ---
 
-# toolbar中设置menu收起图标颜色以及popupwindow弹出位置
-
 1、设置menu收起图标颜色，就是那三个点的图标这里写图片描述，默认的如果使用light style 就是 黑色的，如果使用 dark style 就是白色的。
 如何能够自定义颜色？
 

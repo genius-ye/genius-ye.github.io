@@ -3,8 +3,6 @@ layout: post
 title: Android Videoview实现全屏重复播放
 ---
 
-# Android Videoview实现全屏重复播放
-
 ### 1.videoview实现全屏
 
 > 代码：
