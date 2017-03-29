@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android Videoview实现全屏重复播放
-tags: android
+tags: work android
 ---
 
 ### 1.videoview实现全屏
