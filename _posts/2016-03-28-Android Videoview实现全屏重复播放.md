@@ -8,7 +8,7 @@ tag: android
 
 > 代码：
 
-```
+```java
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -43,7 +43,7 @@ public class FullVideoView extends VideoView {
 
 > 代码：
 
-```
+``` java
  videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {

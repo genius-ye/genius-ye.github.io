@@ -7,7 +7,7 @@ tag: android
 1、设置menu收起图标颜色，就是那三个点的图标这里写图片描述，默认的如果使用light style 就是 黑色的，如果使用 dark style 就是白色的。
 如何能够自定义颜色？
 
-```
+```java
 
  <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -23,7 +23,7 @@ tag: android
 
 2、一般情况下，点击收起menu的按钮，popwindow会覆盖在toolbar上，不美观，如何能够让popwindow在toolbar下方显示呢？
 
-```
+```java
 
  <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
         <!--<item name="android:colorBackground">#000000</item> 也可以设置背景色以及menu中的其他属性-->
@@ -38,7 +38,7 @@ tag: android
 
 然后在toolbar中设置app:popupTheme
 
-```
+```xml
 
  <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
