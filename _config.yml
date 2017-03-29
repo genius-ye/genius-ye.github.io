@@ -30,6 +30,8 @@ markdown: kramdown
 
 kramdown:
   parse_block_html: true
+  # 给 Kramdown 传递值为 “GFM” 的 input 选项，从而启用 Github 扩展的 Markdown 语法
+  input: GFM
 
 gems:
   - jekyll-paginate
