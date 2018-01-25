@@ -1,45 +1,38 @@
-# Welcome to Amplified for Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# ----------- CONFIGURABLE START -----------
+title:            "LiberXue|FullStack|独立开发者|jekyll blog|GitHub blog"
+description:      "Full Stack独立开发者|欢迎来到 LiberXue「角落」侃侃理想、谈谈人生、敲敲代码。"
+url:              https://liberxue.github.io # 域名
+signoff:          "LiberXue" # Your name
+facebook_appid:   #liberxue
+google_analytics: UA-101222464-1
+share:            true 
+# 分页
+paginate: 15
+paginate_path: "liberxuepage:num"
+gems: [jekyll-paginate]
+links:
+  - name:         首页
+    url:          /
+    external:     false
+  - name:         书籍
+    url:          /book
+    external:     false
+  - name:         旅游
+    url:          /road
+    external:     false
+  - name:         归档
+    url:          /archives
+    external:     false
+  - name:         标签
+    url:          /tags
+    external:     false
+  - name:         关于
+    url:          /about
+    external:     false
+# ------------ CONFIGURABLE END ------------
 
-# Site settings
-title: genius-ye
-email: genius-ye@126.com
-description: >
-  我就是我，一种不一样的烟火……
-logo: "/assets/images/logo.jpg"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-url_work: "/work"
-url_travel: "/travel"
-paginate:	8 # The number of posts to show per page on your homepage
-
-name: 'genius-ye'
-bio: >
-  I am me, a different kind of fireworks ... ...
-author_image: "/assets/images/author.jpg"
-twitter_username: genius-ye
-github_username:  genius-ye
-
-# Google Analytics
-analytics_id: ""
-
-# Build settings
-markdown: kramdown
-
-kramdown:
-  parse_block_html: true
-  # 给 Kramdown 传递值为 “GFM” 的 input 选项，从而启用 Github 扩展的 Markdown 语法
-  input: GFM
-
-gems:
-  - jekyll-paginate
-
-#测试
-plugins:
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jemoji
+#permalink:        /:categories/:title.html
+permalink: /:year/:month/:day/:title.html
+defaults:
+  - values:
+      layout: "default"
