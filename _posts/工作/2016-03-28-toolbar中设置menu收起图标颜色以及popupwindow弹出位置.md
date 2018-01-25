@@ -2,6 +2,7 @@
 layout: blog
 title: toolbar中设置menu收起图标颜色以及popupwindow弹出位置
 background: blue
+background-image: http://img.blog.csdn.net/20160920170317557
 istop: true
 work: true
 category: 工作
