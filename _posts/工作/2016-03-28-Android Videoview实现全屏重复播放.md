@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: blog
 title: Android Videoview实现全屏重复播放
 istop: true
 work: true
+category: 工作
 tags: 
 	work 
 	android

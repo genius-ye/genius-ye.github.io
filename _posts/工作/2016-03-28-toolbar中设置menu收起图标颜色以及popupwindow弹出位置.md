@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: blog
 title: toolbar中设置menu收起图标颜色以及popupwindow弹出位置
 background: blue
 istop: true
 work: true
+category: 工作
 tags: 
     work 
     android

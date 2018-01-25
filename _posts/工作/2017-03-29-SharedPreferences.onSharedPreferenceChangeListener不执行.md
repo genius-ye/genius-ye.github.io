@@ -1,9 +1,10 @@
 ---
-layout: post
+layout: blog
 title: SharedPreferences.onSharedPreferenceChangeListener不执行
 background: blue
 istop: true
 work: true
+category: 工作
 tags: 
 	work 
 	android
