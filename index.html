@@ -13,7 +13,7 @@
 		<p>{{ posts.content | strip_html | strip_newlines | truncate: 100 }}</p>
 						</div>
 					</a>
-					<div class="item-slant reverse-slant  bg-{{ posts.background }}"></div>
+					<div id="bar" class="item-slant reverse-slant  bg-{{ posts.background }}"></div>
 					<div class="item-slant">	<div class="liberxue-title">
 				原创
 				</div></div>
@@ -32,3 +32,14 @@
 	</div>
 	</div>
   {% include pagination.html %}
+
+  <script type="text/javascript">
+	function rgb(){
+	var r=Math.floor(Math.random()*255);
+	var g=Math.floor(Math.random()*255);
+	var b=Math.floor(Math.random()*255);
+	var rgb='rgb('+r+','+g+','+b+')';
+	return rgb;
+	}
+	document.getElementById('bar').style.backgroundColor=rgb();
+	</script>
