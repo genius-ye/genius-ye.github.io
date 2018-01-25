@@ -7,7 +7,7 @@
       {% for posts in paginator.posts %}
 		<div class="post-list-item">
 				<div class="post-list-item-container">
-					 <div class="item-thumb  bg-{{posts.background }}" style="background-image:url('{{posts.background-image }}');"></div>
+					 <div class="item-thubg-{{posts.background }}" style="background-image:url('{{posts.background-image }}');"></div>
           	<a href="{{ posts.url }}">
 	             <div class="item-desc">
 		<p>{{ posts.content | strip_html | strip_newlines | truncate: 100 }}</p>
@@ -28,12 +28,8 @@
 					</div>
 				</div>
       </div>
-       {% endfor %}
-	</div>
-	</div>
-  {% include pagination.html %}
 
-  <script type="text/javascript">
+<script type="text/javascript">
 	function rgb(){
 	var r=Math.floor(Math.random()*255);
 	var g=Math.floor(Math.random()*255);
@@ -43,3 +39,8 @@
 	}
 	document.getElementById('bar').style.backgroundColor=rgb();
 	</script>
+
+       {% endfor %}
+	</div>
+	</div>
+  {% include pagination.html %}
