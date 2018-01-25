@@ -37,3 +37,9 @@ kramdown:
 
 gems:
   - jekyll-paginate
+
+#测试
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
