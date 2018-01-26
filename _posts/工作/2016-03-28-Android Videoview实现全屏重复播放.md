@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: Android Videoview实现全屏重复播放
-background: blue
 istop: true
 work: true
 category: 工作
