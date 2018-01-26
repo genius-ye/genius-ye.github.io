@@ -7,13 +7,13 @@
       {% for posts in paginator.posts %}
 		<div class="post-list-item">
 				<div class="post-list-item-container">
-					 <div class="item-thubg-{{posts.background }}" style="background-image:url('{{posts.background-image }}');"></div>
+					 <div class="item-thumb  bg-{{posts.background }}" style="background-image:url('{{posts.background-image }}');"></div>
           	<a href="{{ posts.url }}">
 	             <div class="item-desc">
 		<p>{{ posts.content | strip_html | strip_newlines | truncate: 100 }}</p>
 						</div>
 					</a>
-					<div id="bar" class="item-slant reverse-slant"></div>
+					<div name="bar" class="item-slant reverse-slant  bg-{{ posts.background }}"></div>
 					<div class="item-slant">	<div class="liberxue-title">
 				原创
 				</div></div>
@@ -28,8 +28,11 @@
 					</div>
 				</div>
       </div>
-
-<script type="text/javascript">
+       {% endfor %}
+	</div>
+	</div>
+  {% include pagination.html %}
+  <script type="text/javascript">
 	function rgb(){
 	var r=Math.floor(Math.random()*255);
 	var g=Math.floor(Math.random()*255);
@@ -37,10 +40,8 @@
 	var rgb='rgb('+r+','+g+','+b+')';
 	return rgb;
 	}
-	document.getElementById('bar').style.backgroundColor=rgb();
+	var bar = document.getElementsByName('bar');
+	for (var i = bar.length - 1; i >= 0; i--) {
+		bar[i].style.backgroundColor=rgb();
+	}
 	</script>
-
-       {% endfor %}
-	</div>
-	</div>
-  {% include pagination.html %}
