@@ -70,3 +70,16 @@ $(function () {
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
+<script type="text/javascript">
+  function rgb(){
+  var r=Math.floor(Math.random()*255);
+  var g=Math.floor(Math.random()*255);
+  var b=Math.floor(Math.random()*255);
+  var rgb='rgb('+r+','+g+','+b+')';
+  return rgb;
+  }
+  var bar = document.getElementsByName('bar');
+  for (var i = bar.length - 1; i >= 0; i--) {
+    bar[i].style.backgroundColor=rgb();
+  }
+  </script>
