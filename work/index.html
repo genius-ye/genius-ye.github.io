@@ -16,7 +16,11 @@ description: "记录一些工作经验和遇到的问题"
 		<p>{{ posts.content | strip_html | strip_newlines | truncate: 100 }}</p>
 						</div>
 					</a>
-					<div class="item-slant reverse-slant  bg-{{ posts.background }}"></div>
+					{% if posts.background %}
+					<div class="item-slant reverse-slant bg-{{posts.background}}" ></div>
+					{% else %}
+					<div name="bar" class="item-slant reverse-slant " ></div>
+					{% endif %}
 					<div class="item-slant"></div>
 					<div class="item-label">
 						<div class="item-title"><a href="{{ posts.url }}">{{ posts.title }}</a></div>
