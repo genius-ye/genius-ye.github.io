@@ -13,10 +13,9 @@
             {% if paginator.previous_page == 1 %}
             <a href="/page/?genius-ye">
             {% else %}
-            <a href="/page{{ paginator.previous_page }}?genius-ye" >
+            <a href="/page{{ paginator.previous_page }}?genius-ye" ></a>
             {% endif %}
                 <span>&laquo;</span>
-            </a>
         {% endif %}
         </li>
         {% for i in (1..paginator.total_pages) limit:9 offset:{{paginator.page-1}} %}
