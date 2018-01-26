@@ -13,7 +13,7 @@
 		<p>{{ posts.content | strip_html | strip_newlines | truncate: 100 }}</p>
 						</div>
 					</a>
-					{% if posts.backgroud %}
+					{% if posts.background %}
 					<div class="item-slant reverse-slant bg-{{posts.background}}" ></div>
 					{% else %}
 					<div name="bar" class="item-slant reverse-slant " ></div>
