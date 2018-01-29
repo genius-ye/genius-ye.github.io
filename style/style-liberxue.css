@@ -1,5 +1,10 @@
 @charset 'UTF-8';
 
+.item-title{
+    line-height: 60px;
+    text-align: center;
+}
+
 /* ==========================================================================
    #reset
    ========================================================================== */
@@ -443,9 +448,4 @@ pre code::after {font-size: 1rem;color: #BFBFBF;position: absolute;top: 5px;righ
    .post-onelist-item-container .item-content{display:none;}
    .post-onelist-item-container .item-readmore{display:none;}
    .post-onelist-item-container .onelist-item-thumb{min-height:180px;}
-}
-
-.item-title{
-    line-height: 60px;
-    text-align: center;
 }
