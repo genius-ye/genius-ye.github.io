@@ -2,7 +2,7 @@
 layout: blog
 title: SharedPreferences.onSharedPreferenceChangeListener不执行
 background: blue
-background-image: http://img.ivsky.com/img/tupian/pre/201707/07/weimei_de_pingguobijibendiannao-002.jpg
+background-image: http://ww1.sinaimg.cn/large/0060lm7Tly1fnxdswcigaj30ms0f676e.jpg
 istop: true
 work: true
 category: 工作
