@@ -16,14 +16,14 @@ tags:
 
 首先得定义个==全局==的OnSharedPreferenceChangeListener
 
-```
+``` java
 private SharedPreferences.OnSharedPreferenceChangeListener prefListner;
 
 ```
 
 然后再去添加监听
 
-```
+``` java
 prefListner = new SharedPreferences.OnSharedPreferenceChangeListener(){
             public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
 

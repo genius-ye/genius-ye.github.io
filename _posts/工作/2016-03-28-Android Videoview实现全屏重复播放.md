@@ -13,7 +13,7 @@ tags:
 
 > 代码：
 
-```java
+``` java
 
 import android.content.Context;
 import android.util.AttributeSet;
