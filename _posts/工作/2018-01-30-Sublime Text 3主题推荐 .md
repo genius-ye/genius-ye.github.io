@@ -4,7 +4,7 @@ title: Sublime Text 3主题推荐
 backgroud-image: https://raw.githubusercontent.com/ihodev/sublime-boxy-assets/master/assets/readme/3.6.0/skins/ocean.png
 istop: true
 category: 工作
-tag:
+tags: 
 	奇技淫巧
 ---
 
