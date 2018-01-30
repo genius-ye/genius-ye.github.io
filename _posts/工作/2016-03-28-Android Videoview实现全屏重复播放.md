@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Android Videoview实现全屏重复播放
+background-image: http://img2.imgtn.bdimg.com/it/u=185601643,1151287495&fm=27&gp=0.jpg
 istop: true
 work: true
 category: 工作
