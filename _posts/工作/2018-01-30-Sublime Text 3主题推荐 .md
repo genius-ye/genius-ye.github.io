@@ -1,8 +1,9 @@
 ---
 layout: blog
 title: Sublime Text 3主题推荐
-backgroud-image: https://raw.githubusercontent.com/ihodev/sublime-boxy-assets/master/assets/readme/3.6.0/skins/ocean.png
+background-image: https://raw.githubusercontent.com/ihodev/sublime-boxy-assets/master/assets/readme/3.6.0/skins/ocean.png
 istop: true
+work: true
 category: 工作
 tags: 
     奇技淫巧
